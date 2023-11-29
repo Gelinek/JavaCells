@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio8</title>
+</head>
+<body style="width: 50%; ">
+    <form method="post" action="">
+        <fieldset>Datos Personales
+            <br>
+            <p>Nombre</p>
+            <input type="text">
+            <p>edad</p>
+            <input type="number" name="edad" value="edad">
+        </fieldset>
+    
+    <br><br>
+        <fieldset>Cultura General
+            <p>Capital de Noruega</p>
+            <article style="display: flex;">
+                <p>Copenhague</p>
+                <input type="radio" value ="Copenhague">
+                <p>Helsinki</p>
+                <input type="radio" value="Helsinki">
+                <p>Oslo</p>
+                <input type="radio" value="Oslo">
+            </article>
+        </fieldset>
+    <br>
+        <section>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Borrar">
+        </section>
+    </form>
+        
+        <section>
+            <h1>Ejemplo 1</h1>
+            <article>
+                <form action="">
+                    <p>introduce tu edad</p>
+                    <input type="number" value="edad" name="edad1" required>
+                    <input type="submit" value="Enviar" onclick="">
+                </form>
+            </article>
+            <h1>Ejemplo 2</h1>
+            <article>
+                <form method="post" action="" >
+                    <p>introduce tu edad(min=18 max=99, campo obligatorio)</p>
+                    <input type="number" value="edad" name="edad2" required min=18 max=99>
+                    <input type="submit" value=" Enviar">
+                </form>
+            </article>
+            <h1>Ejemplo 3</h1>
+            <article>
+                <form method="post" action="">
+                    <p>Introduce tu edad(min=18 max=99, campo obligatorio)</p>
+                    <input type="number" value="enviar" name="edad3" required min=18 max=99>
+                    <input type="submit" value="Enviar" onclick="this.style.color='blue'">
+                </form>
+            </article>
+        </section>
+        <br><br><br>
+        <p onclick="this.style.color='blue'"">Parrafo</p>
+        <p ondblclick="this.style.color='blue'"">Parrafo</p>
+        <p onmouseup="this.style.color='blue'"">Parrafo</p>
+        <p onmousedown="this.style.color='blue'"">Parrafo</p>
+        <p onmousemove="this.style.color='blue'"">Parrafo</p>
+        <p onmouseover="this.style.color='blue'"">Parrafo</p>
+        <p onmouseout="this.style.color='blue'"">Parrafo</p>      
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 4</title>
+</head>
+<body>
+    
+    <form>
+        <section>
+            <p>Datalist</p>
+            <fieldset>
+                <label for="inputLista">Lista de colores</label>
+                <input list="listacolores" name="inputLista">
+                <datalist id="listacolores">
+                    <option value="Azul">
+                    <option value="Rojo">
+                    <option value="Amarillo">
+                    <option value="Negro">
+                    <option value="Blanco">
+
+                </datalist>
+            </fieldset>
+        </section>
+
+        <section>
+            <p>Url input</p>
+            <fieldset>
+                <label for="Url">Lista urls</label>
+                <input type="url" name="url" id="url" placeholder="example.com" pattern="https://.*" size="30" list="listaurls" required>
+                <datalist id="listaurls">
+                    <option value="https://www.google.com" label="by Google">
+                        <option value="https://www.msn.com" label="by MS">
+
+                </datalist>
+            </fieldset>
+        </section>
+        <section>
+            <p>Range</p>
+            <fieldset>
+                <label for="range">Rangos</label>
+                <input type="range" list="listanums" step="1" name="range" max="6" min="0">
+                <datalist id="listanums">
+                    <option value="0" label="cero"></option>
+                    <option value="1" label="uno"></option> 
+                    <option value="2" label="dos"></option> 
+                    <option value="3" label="tres"></option> 
+                    <option value="4" label="cuatro"></option> 
+                    <option value="5" label="cinco"></option>  
+                </datalist>
+            </fieldset>
+        </section>
+        <br>
+        <input type="submit" name="btn_enviar" value="Enviar">
+        <input type="reset" name="btn_limpiar" value="Limpiar">
+
+    </form>
+</body>
+</html>

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" style="width: 50%;">
+        <h1>Información sobre el producto</h1>
+        <fieldset>
+            <legend>Datos basicos</legend>
+            <p>Nombre</p>
+            <input type="text" name="nombre">
+            <p>Descripción</p>
+            <textarea name="des" id="des" cols="30" rows="3"></textarea>
+            <br>
+            <input type="file">
+            <br>
+            <br>
+            <label for="contador"><input type="checkbox" name="checkbox" id="con">Contador de visias</label>
+        </fieldset>
+        <fieldset>
+            <legend>Datos Enocómicos</legend>
+            <label for="precio">Precio <input type="text" style="width: 8%;">  $</label>
+            <label for="impuestos">Impuestos
+                    <input list="listataxes" name="tax" style="width: 8%;">
+                    <datalist id="listataxes">
+                        <option value="4%">
+                        <option value="5%">
+                        <option value="10%">
+                        <option value="15%">
+                        <option value="25%">
+                    </datalist>
+            </label>
+            <br>
+            <label for="promo">Promoción</label><br>
+            <input type="radio" name="promo" >
+            <label for="promo">Ninguno</label> <br>
+            <input type="radio" name="promo">
+            <label for="radio">Transporte gratuito</label><br>
+            <input type="radio" name="promo">
+            <label for="des">Descuento 5%</label><br>
+            
+        </fieldset>
+
+        <br>
+        <br>
+    </form>
+    <section>
+        <table id="tabla1" style="text-align: center; padding: 2%;" border="1">
+            <caption >Análisis de ventas anuales</caption>
+            <thead>
+                <tr>
+                    <td colspan="5">Expasion de ventas</td>
+                </tr>
+                <tr id="producto"> 
+                    <th>Año</th>   
+                    <th>Producto A</th>
+                    <th>Producto B</th>
+                    <th>Producto C</th>
+                    <th>Producto D</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr id="fila1">
+                    <td>N-3</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                </tr>
+                <tr id="fila2">
+                    <td>N-2</td>
+                    <td>3</td>
+                    <td>5</td>
+                    <td>8</td>
+                    <td>4</td>
+                </tr>
+                <tr id="fila3">
+                    <td>N-1</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>7</td>
+                    <td>3</td>
+                </tr>
+                <tr id="fila4">
+                    <td>N</td>
+                    <td>5</td>
+                    <td>7</td>
+                    <td>6</td>
+                    <td>2</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th rowspan="2">Año</th>
+                    <th>Producto A</th>
+                    <th>Producto B</th>
+                    <th>Producto C</th>
+                    <th>Producto D</th>
+                </tr>
+                <tr>
+                    <th colspan="4">Expasion de ventas</th>
+                </tr>
+            </tfoot>
+        </table>
+    </section>
+    <script>
+        var datos = document.getElementsByTagName("th");
+        
+        /*console.log(datos)
+        console.log(datos[2].innerHTML)
+        /*
+        Indexs; 
+        año=0
+        Producto A=2
+        Producto B=3
+        Producto C=4
+        Producto D=5
+
+        */
+       var año;
+       var producto= document.getElementById("producto");
+       var elementosproducto = producto.getElementsByTagName("th");
+       for(let i=0; i <=4; i++){
+        /*console.log(elementosproducto[i].innerHTML)*/
+       }
+        
+        var fila1 = document.getElementById("fila1");
+        var elementosfila1 = fila1.getElementsByTagName("td");
+        for (let i=0; i<=4; i++){
+           /* console.log(elementosfila1[i].innerHTML);*/
+        }
+
+        var fila2 = document.getElementById("fila2");
+        var elementosfila2 = fila2.getElementsByTagName("td");
+        for (let i=0; i<=4; i++){
+           /* console.log(elementosfila2[i].innerHTML);*/
+        }
+
+        var fila3 = document.getElementById("fila3");
+        var elementosfila3 = fila3.getElementsByTagName("td");
+        for (let i=0; i<=4; i++){
+            /*console.log(elementosfila3[i].innerHTML);*/
+        }
+
+        var fila4 = document.getElementById("fila4");
+        var elementosfila4 = fila4.getElementsByTagName("td");
+        for (let i=0; i<=4; i++){
+            /*console.log(elementosfila4[i].innerHTML);*/
+        }
+        var nom = document.getElementById("tabla1");
+        var nombretabla = nom.getElementsByTagName("caption");
+        console.log(nombretabla[0].innerHTML);
+        let j=0;
+        
+            console.log(elementosproducto[j].innerHTML, elementosproducto[j+1].innerHTML, elementosproducto[j+2].innerHTML, elementosproducto[j+3].innerHTML, elementosproducto[j+4].innerHTML);
+            console.log(elementosfila1[j].innerHTML, elementosfila1[j+1].innerHTML, elementosfila1[j+2].innerHTML, elementosfila1[j+3].innerHTML, elementosfila1[j+4].innerHTML);
+            console.log(elementosfila2[j].innerHTML, elementosfila2[j+1].innerHTML, elementosfila2[j+2].innerHTML, elementosfila2[j+3].innerHTML, elementosfila2[j+4].innerHTML)
+            console.log(elementosfila3[j].innerHTML, elementosfila3[j+1].innerHTML, elementosfila3[j+2].innerHTML, elementosfila3[j+3].innerHTML, elementosfila3[j+4].innerHTML)
+            console.log(elementosfila4[j].innerHTML, elementosfila4[j+1].innerHTML, elementosfila4[j+2].innerHTML, elementosfila4[j+3].innerHTML, elementosfila4[+4].innerHTML,)
+            
+        
+            
+
+            
+
+        
+
+
+    </script>
+</body>
+</html>
